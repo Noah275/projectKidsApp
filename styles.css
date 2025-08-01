@@ -74,6 +74,7 @@ nav{
     padding-block: 2rem;
 }
 .bannerWrapper {
+    background-color: red;
     border: 2px solid;
     height: 40vh;
     display: flex;
