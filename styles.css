@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: "Fredoka", sans-serif;
 }
 
 nav{
@@ -38,11 +41,12 @@ nav{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
-.navItems > a :first-child{
-    color: #0a0650;
+.navItems > a:first-child{
+    color: #180ec7;
+   
 }
 
 .navIcons{
@@ -51,33 +55,133 @@ nav{
     align-items: center;
 }
 
+.navIcons > h6{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #0a0650;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
 .navIcons > button{
     width: 110px;
-    background-color: #0a0650;
+    background-color: #180ec7;
     color: #fff;
-    padding: .3rem .5rem;
+    padding: .5rem .5rem;
     border-radius: 20px;
     border: none;
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
 .navIcons > button:last-child{
     background-color: transparent;
-    color: #0a0650;
-    border: 1px solid #0a0650;
+    color: #180ec7;
+    border: 1px solid #180ec7;
 }
-
-/* banner styling */
-.secOne{
-    padding-block: 2rem;
+/* 
+banner styling */
+ .secOne{
+    padding-block: 2rem; 
 }
 .bannerWrapper {
-    background-color: red;
-    border: 2px solid;
-    height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 3rem;
 }
+.bannerContent{
+   flex: 1;
+}
+.bannerContent > h1{
+    color: #0a0650;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+.bannerContent > h1 > span{
+    color: #180ec7;
+    font-weight: 500;
+}
+
+.bannerContent > h1 :last-child{
+    margin-right: 1rem;
+}
+
+.bannerContent > h1 > span :last-child{
+    border-radius: 100%;
+    color: #fff;
+    background-color: #0a0650;
+    padding: 0.2rem 0.3rem;
+    margin: 1rem 0rem;
+}
+
+.bannerContent > p{
+    margin-block: 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: #536a79;
+}
+
+.trackBtn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0rem;
+}
+
+.trackBtn > button{
+    background-color: #180ec7;
+    border: none;
+    color: #fff;
+    padding: 0.8rem 1.4rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.trackBtn > h5{
+    color: #0a0650;
+    font-weight: 500;
+}
+
+.trackBtn > h5 > span{
+    /* border: 2px solid; */
+   padding: 0.7rem 0.8rem ;
+   border-radius: 100%;
+   background-color: gold;
+   color: #fff;
+}
+
+.bannerImg{
+    width: 40%;
+}
+
+.bannerImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* responsive code for navbar and banner */
+@media{min-width: 320px;} amd {max-width: 500px;}[
+    .innerNav{
+        width: calc(100% - 40px);
+    }
+
+    .navRight{
+        display: none;
+    }
+
+    .bannerWrapper{
+        width: calc(100% - 40px);
+        flex-direction: column;
+    }
+
+    .bannerImg{
+        width: 100%;
+    }
+]
