@@ -23,6 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 1.9rem;
 }
 
 .genLayout{
@@ -52,7 +53,8 @@ nav{
 .navIcons{
     display: flex;
     gap: 1rem;
-    align-items: center;
+    justify-content: end;
+    margin-right: -2rem;
 }
 
 .navIcons > h6{
