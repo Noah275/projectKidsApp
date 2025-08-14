@@ -169,7 +169,7 @@ banner styling */
 }
 
 /* responsive code for navbar and banner */
-@media{min-width: 320px;} amd {max-width: 500px;}[
+@media (min-width: 320px) and ( max-width: 500px){
     .innerNav{
         width: calc(100% - 40px);
     }
@@ -186,4 +186,5 @@ banner styling */
     .bannerImg{
         width: 100%;
     }
-]
+    }
+
