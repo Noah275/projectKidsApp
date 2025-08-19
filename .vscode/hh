@@ -1,0 +1,35 @@
+  .linkItemss > p{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 2rem;
+        }
+
+                .linkItemss > p > i{
+                    color: #180ec7;
+                    border: 1px solid;
+                    background-color: #fff;
+                    padding: 0.2rem 0.2rem;
+                    border-radius: 100%;
+                }
+
+                .wedBody{
+                    display: flex;
+                    gap: 1rem;
+                }
+
+                .wedBody > i{
+                     color: #180ec7;
+                    border: 1px solid;
+                    background-color: #fff;
+                    padding: 0.2rem 0.2rem;
+                    border-radius: 100%;
+
+                }
+                
+
+        
+
+

@@ -10,6 +10,9 @@
 nav{
     background-color: #f0f9ff;
     padding-block: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .innerNav{
@@ -23,7 +26,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1.9rem;
 }
 
 .genLayout{
@@ -87,7 +89,7 @@ nav{
 /* 
 banner styling */
  .secOne{
-    padding-block: 2rem; 
+    padding-top: 6rem; 
 }
 .bannerWrapper {
     display: flex;
@@ -135,7 +137,7 @@ banner styling */
     margin: 2.5rem 0rem;
 }
 
-.trackBtn > button{
+.btn_btn{
     background-color: #180ec7;
     border: none;
     color: #fff;
@@ -168,7 +170,6 @@ banner styling */
     object-fit: cover;
 }
 
-/* responsive code for navbar and banner */
 @media (min-width: 320px) and ( max-width: 500px){
     .innerNav{
         width: calc(100% - 40px);
@@ -187,4 +188,939 @@ banner styling */
         width: 100%;
     }
     }
+
+
+
+/* about styling */
+.about{
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutImg{
+    width: 350px;
+}
+
+.aboutImg > img{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutContent{
+    width: 50%;
+}
+
+.titleBadge{
+    background-color: #f2d117;
+    width: 25%;
+    text-align: center;
+    padding: .4rem 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.aboutContent > h1{
+    color: #0a0650;
+    text-transform: capitalize;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 1rem;
+}
+
+.aboutContent > p{
+    color: #69747a;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+@media(min-width:320px) and (max-width: 500px){
+    .about{
+        flex-direction: column;
+        width: calc(100% - 40px);
+    }
+
+    .aboutContent, .aboutImg{
+        width: 100%;
+    }
+}
+
+         /* TRACKOX */
+
+
+.trackInfo{
+     max-width: 400px; 
+    margin: auto; 
+    border: 2px solid;
+}
+
+.trackInfo > h5{
+    margin: auto;
+    text-transform: capitalize;
+}
+
+ .trackInfo > h2{
+    text-align: center; 
+    font-weight: 500;
+    color: #0a0650;
+    text-transform: capitalize;
+    padding-top: 0.7rem;
+}
+
+.proCon > button{
+    background-color: #f0f9ff;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #180ec7;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 1rem auto;
+    margin-top: 2rem;
+
+}
+ 
+.trackBtns > button{
+    margin: 0rem 0.5rem;
+}
+
+
+ .trackBtns > button:nth-child(2), .trackBtns > button:nth-child(3){
+    background-color: transparent;
+    color: #180ec7;
+    border: 1px solid;
+}
+
+.trackCards{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card{
+    height: 40vh;
+    border: 2px solid;
+}
+
+
+
+      /* PROGRAMS/ PAYMENT PLAN */
+
+
+.payPlan{
+    background-color: #f0f9ff;
+}
+
+.toolItems{
+    padding-top:3rem ;
+    max-width: 200px;
+    margin: auto;
+}
+
+.toolItems > h5{
+    text-transform: capitalize;
+    margin: auto;
+    padding: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.toolItems > h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #0a0650;
+    padding-top: 10px;
+}
+
+.scrCon{
+    display: flex;
+    margin-top: 2rem;
+   
+}
+
+.scrBox{
+    width: 470px;
+
+}
+
+.scrItems{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.scrItems > img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+}
+
+.scrBox > p{
+    color: #0a0650;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.priCon{
+    max-width: 250px;
+    margin: auto;
+}
+
+.priCon > h5{
+    text-transform: capitalize;
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 10px;
+    color: #180ec7;
+    font-weight:500;
+}
+
+.priCon > h2{
+    text-transform: capitalize;
+    text-align: center;
+    color:#0a0650;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.subCon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    }
+
+    .subItems{
+        height: 47vh;
+        padding: 2.7rem 1rem;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .subInner > h5{
+        text-transform: capitalize;
+        color: #0a0650;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .subInner > h4{
+        color: #0a0650;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1rem 1rem;
+    }
+
+.subInner > h4 > span{
+    text-decoration: line-through;
+    font-size: 10px;
+    color: #536a79;
+    padding: 0rem 0.5rem;
+}
+
+.subInner > h6{
+    background-color: #f0f9ff;
+    text-transform: capitalize;
+    font-size: 11.5px;
+    font-weight: 400;
+    color: #69747a;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0.3rem 0rem;
+    margin-bottom: 1rem;
+
+}
+
+.subInner > hr{
+    color: #f0f9ff;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+.subInner > p > i{
+    opacity: 0.5;
+}
+.subInner > p{
+    line-height: 1.7rem;
+    color:#0a0650;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.subInner > button{
+    margin-top: 4rem;
+    padding: 0.5rem 4.7rem;
+    text-transform: capitalize;
+    background-color: #180ec7;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+}
+
+.addOne{
+    background-color: gold;
+    border-radius: 10px;
+}
+
+.addOne > h3{ 
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0.3rem 0rem;
+
+}
+
+
+    .subItem{
+        padding: 0.5rem 0.7rem;
+        background-color: #180ec7;
+        height: 43vh;
+        border-radius: 10px;
+    }
+
+    .subInners > h5{
+         text-transform: capitalize;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+     .subInners > h4{
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1rem 1rem;
+    }
+
+.subInners > h4 > span{
+    text-decoration: line-through;
+    font-size: 10px;
+    color: #536a79;
+    padding: 0rem 0.5rem;
+}
+
+.subInners > h6{
+    background-color: #f0f9ff;
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: 400;
+    color: #69747a;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0.3rem 0rem;
+    margin-bottom: 1rem;
+
+}
+
+.subInners > hr{
+    color: #f0f9ff;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+.subInners > p > i{
+    opacity: 0.5;
+    padding-right:0.3rem;
+}
+.subInners > p{
+    line-height: 1.7rem;
+    color:#fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.subInners > button{
+    margin-top: 2rem;
+    padding: 0.5rem 4.7rem;
+    text-transform: capitalize;
+    background-color:#fff;
+    color: #180ec7;
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+}
+
+.subInnerz > h5{
+        text-transform: capitalize;
+        color: #0a0650;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .subInnerz > h4{
+        color: #0a0650;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1rem 1rem;
+    }
+
+.subInnerz > h4 > span{
+    text-decoration: line-through;
+    font-size: 10px;
+    color: #536a79;
+    padding: 0rem 0.5rem;
+}
+
+.subInnerz > h6{
+    background-color: #f0f9ff;
+    text-transform: capitalize;
+    font-size: 11.5px;
+    font-weight: 400;
+    color: #69747a;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0.3rem 0rem;
+    margin-bottom: 1rem;
+
+}
+
+.subInnerz > hr{
+    color: #f0f9ff;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+.subInnerz > p > i{
+    opacity: 0.5;
+}
+.subInnerz > p{
+    line-height: 1.7rem;
+    color:#0a0650;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.subInnerz> button{
+    margin-top: 2.5rem;
+    padding: 0.5rem 4.7rem;
+    text-transform: capitalize;
+    background-color: #180ec7;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+}
+
+.butTom{
+    max-width: 250px;
+    margin: auto;
+
+}
+
+
+.butTom > button{
+    text-align: center;
+    padding: 0.5rem 3rem;
+   background-color: rgb(16, 202, 16);
+   color: #fff;
+   margin-top: 2rem;
+   border-radius: 15px;
+   border: none;
+   text-transform: capitalize;
+   font-size: 12px;
+   margin: auto;
+   margin: 2rem 0rem;
+   
+   
+}
+
+
+    /* MAP SECTION */
+
+
+.mapIcon{
+    max-width: 350px;
+    margin: auto;
+    margin-top: 3rem;
+}
+.mapItems > h5{
+    margin: auto;
+    text-transform: capitalize;
+    color: #0a0650;
+    font-weight: 500;
+}
+
+.mapItems > h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    color: #0a0650;
+    padding-top: 1rem;
+}
+
+.mapImage{
+    width: 1000px;
+    margin-top: 3rem;
+}
+
+.mapImage > img{
+    width: 100%;
+    padding: none;
+}
+
+.mapDown{
+    display: flex;
+    gap: 10rem;
+
+}
+
+.mapDowns{
+    width: 500px;
+}
+
+.mapItem > h3{
+    text-transform: capitalize;
+    color: #0a0650;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1rem 0rem;
+}
+
+.mapTemHolders{
+    margin-top: 1rem;
+}
+
+.mapItem > hr{
+    opacity: 0.5;
+}
+
+.mapTemHolder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapTem > p{
+    text-transform: capitalize;
+    color: #536a79;
+    font-size:13px ;
+
+}
+
+.mapTem > p > i{
+     color: #180ec7;
+    border-radius: 100%;
+    padding: 0.2rem 0.2rem;
+    background-color: #ffffff;
+    border: 0.5px solid #536a79;
+}
+
+.mapTemHolder> h6{
+      color: #536a79;
+    font-size:12px ;
+    font-weight: 400;
+}
+
+.mapTemHolder > h6 > i{
+     color: #180ec7;
+    border-radius: 100%;
+    padding: 0.1rem 0.1rem;
+    background-color: #ffffff;
+    border: 1px solid #536a79;
+}
+
+
+
+
+         /* BLOG SECTION */
+
+.blogCon{
+    margin-top: 5rem;
+}
+
+
+.blogBox{
+    max-width: 250px;
+    margin: auto;
+    }
+
+    .blogItems > h5{
+        text-transform: capitalize;
+        color: #0a0650;
+        font-size: 13px;
+        margin: auto;
+        font-weight: 500;
+    }
+
+    .blogItems > h2{
+        text-transform: capitalize;
+        text-align: center;
+        padding-top: 1rem;
+        font-weight: 500;
+    }
+
+    .blogImage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top:3rem ;
+    }
+
+    .blogImageBox{
+        width: 310px;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+    }
+
+    .blogImageItems > img{
+        width: 100%;
+     }
+
+     .blogImageItems > h3{
+        color: #0a0650;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .blogImageItems > p{
+        font-size: 13px;
+        padding: 0rem 0.5rem;
+        color: #536a79;
+    }
+
+    .blogImageItems > h6{
+        font-size: 13px;
+        color: #536a79;
+        font-weight: 400;
+        text-transform: capitalize;
+        padding: 0rem 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .seeBox{
+    max-width: 200px;
+    margin: auto;
+
+}
+
+
+.seeBox > p{
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+   background-color: #180ec7;
+   color: #fff;
+   margin-top: 2rem;
+   border-radius: 15px;
+   border: none;
+   text-transform: capitalize;
+   font-size: 12px;
+   margin: auto;
+   margin: 2rem 0rem;
+}
+
+
+    /* FREQUENTLY ASKED */
+    .freqWrapper{
+        background-color: #f0f9ff;
+    }
+
+    .conBox{
+        display: flex;
+        margin: 4rem 0rem;
+        gap: 4rem;
+    }
+
+    .touBox{
+        max-width: 270px;
+     }
+
+     .touBox > h5{
+        text-transform: capitalize;
+        color: #0a0650;
+        font-weight: 500;
+     }
+
+     .touBox > h2{
+        text-transform: capitalize;
+        color: #0a0650;
+        font-weight: 500;
+        font-size: 25px;
+       padding: 0.4rem 0rem;
+     }
+
+     .touBox > p{
+        color: #536a79;
+        font-size: 14px;
+        line-height: 1.2rem;
+        padding-bottom: 2rem;
+     }
+
+
+     .callBox > p{
+        color: #536a79;
+        font-size: 13px;
+        line-height: 2rem;
+    }
+
+    .callBox > p > i{
+        color: #180ec7;
+        border-radius: 100%;
+        padding: 0.2rem 0.2rem;
+        background-color: #f0f9ff;
+        margin-right: 0.5rem;
+    }
+
+    form{
+        background-color: #f0f9ff;
+        border-radius: 10px;
+    }
+
+    .formCon{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 650px;
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+
+    .formBox{
+        width: 250px;
+        line-height: 1.5rem;
+    }
+
+    .formBox> h1 {
+        text-transform: capitalize;
+        color: #0a0650;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .formBox > p{
+        font-size: 11px;
+        font-weight: 500;
+        color: #0a0650;
+    }
+
+    .formBox > hr{
+        color: #180ec7;
+        opacity: 0.5;
+    }
+
+    .formCox{
+          width: 290px;
+        line-height: 1.5rem;
+     }
+
+     .formCox> h1 {
+        color: #0a0650;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .formCox > p{
+        font-size: 11px;
+        font-weight: 500;
+        color: #536a79;
+    }
+
+    .formCox > hr{
+        opacity: 0.2;
+        color: #536a79;
+    }
+
+    .formDox{
+        padding: 1rem 1rem;
+        line-height: 1.9rem;
+    }
+
+    .formDox > h1{
+          color: #0a0650;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .formDox > p{
+        font-size: 11px;
+        font-weight: 500;
+        color: #536a79;
+    }
+
+    .formDox > hr{
+        opacity: 0.2;
+    }
+
+    .formBut{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+    }
+
+    .formButBox > button{
+        background-color: #180ec7;
+        color: #fff;
+        padding: 0.5rem 3rem;
+        border-radius: 15px;
+        text-transform: capitalize;
+        font-size: 13px;
+        border: none;
+    }
+
+    .formButIcons{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .formButIcons > i{
+        color: #140e88;
+        border-radius: 100%;
+        padding: 0.5rem 0.6rem;
+        background-color: #fff;
+    }
+
+
+        /* FOOTER */
+
+        footer{
+            background-color: #180ec7;
+        }
+
+        .iconBox{
+            display: flex;
+            gap: 7rem;
+            padding: 3rem 0rem;
+        }
+
+        .iconSch{
+            width: 370px;
+        }
+
+        .iconSch > p{
+            font-size: 13px;
+            color: #d0cfcf;
+            line-height: 1.3rem;
+        }
+
+        .linkWrapper{
+            display: flex;
+            gap: 5rem;
+        }
+
+        .linkHead > h1{
+            text-transform: capitalize;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 2rem;
+            color: #fff;
+        }
+
+        .linkItems > a{
+            display: block;
+            text-decoration: none;
+            color: #d0cfcf;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.8rem;
+
+        }
+        .linkItems > a :first-child{
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5rem;
+
+        }
+
+         .linkHeads > h1{
+            text-transform: capitalize;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 2rem;
+            color: #fff;
+        }
+
+        .linkItemss > p{
+            display: block;
+            text-decoration: none;
+            color:#d0cfcf;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5rem;
+        }
+         .linkHeadss > h1{
+            text-transform: capitalize;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 2rem;
+            color: #fff;
+        }
+
+        .linkItemsss > p{
+            display: block;
+            text-decoration: none;
+            color: #d0cfcf;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 2.5rem;
+        }
+
+         .linkItemsss > p > i{
+                    color: #180ec7;
+                    border: 1px solid;
+                    background-color: #fff;
+                    padding: 0.2rem 0.2rem;
+                    border-radius: 100%;
+                    margin-right: 0.5rem;
+                }
+
+                .wedBody{
+                    display: flex;
+                    gap: 0.7rem;
+                }
+
+                .wedBody > i{
+                     color: #180ec7;
+                    border: 1px solid;
+                    background-color: #fff;
+                    padding: 0.2rem 0.2rem;
+                    border-radius: 100%;
+
+                }
+
+                .resBox > P{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #d0cfcf;
+                    font-size: 13px;
+                    padding: 2rem 0rem;
+                    margin: auto;
+                }
+
+                .resBox > p > span{
+                    margin: 0rem 0.3rem;
+                }
+
+            .resBox> hr{
+                opacity: 0.3;
+            }
+
+        
+                
+
+        
+
 
