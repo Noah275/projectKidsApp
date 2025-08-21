@@ -253,7 +253,6 @@ banner styling */
 .trackInfo{
      max-width: 400px; 
     margin: auto; 
-    border: 2px solid;
 }
 
 .trackInfo > h5{
@@ -285,27 +284,44 @@ banner styling */
     margin-top: 2rem;
 
 }
+
+.trackBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
  
 .trackBtns > button{
-    margin: 0rem 0.5rem;
+    padding: 0.7rem 2.5rem;
 }
 
 
  .trackBtns > button:nth-child(2), .trackBtns > button:nth-child(3){
     background-color: transparent;
-    color: #180ec7;
+    color: #140e88;
     border: 1px solid;
+    font-weight: 500;
 }
 
 .trackCards{
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
 }
 
 .card{
-    height: 40vh;
-    border: 2px solid;
+}
+
+.card > img{
+    width: 100%;
+}
+
+@media(min-width:320px) and (max-width: 500px){
+    .trackInfo{
+        width: calc(100% - 40px);
+    }
 }
 
 
@@ -367,6 +383,10 @@ banner styling */
     color: #0a0650;
     font-weight: 400;
     text-align: left;
+}
+
+@media(min-width:320px) and (max-width:500px){
+    
 }
 
 
@@ -440,7 +460,6 @@ banner styling */
     text-align: center;
     padding: 0.3rem 0rem;
     margin-bottom: 1rem;
-
 }
 
 .subInner > hr{
@@ -448,9 +467,11 @@ banner styling */
     opacity: 0.5;
     margin-bottom: 1rem;
 }
+
 .subInner > p > i{
     opacity: 0.5;
 }
+
 .subInner > p{
     line-height: 1.7rem;
     color:#0a0650;
@@ -482,7 +503,6 @@ banner styling */
     font-weight: 500;
     text-transform: capitalize;
     padding: 0.3rem 0rem;
-
 }
 
 
@@ -526,7 +546,6 @@ banner styling */
     text-align: center;
     padding: 0.3rem 0rem;
     margin-bottom: 1rem;
-
 }
 
 .subInners > hr{
@@ -534,10 +553,12 @@ banner styling */
     opacity: 0.5;
     margin-bottom: 1rem;
 }
+
 .subInners > p > i{
     opacity: 0.5;
     padding-right:0.3rem;
 }
+
 .subInners > p{
     line-height: 1.7rem;
     color:#fff;
@@ -591,7 +612,6 @@ banner styling */
     text-align: center;
     padding: 0.3rem 0rem;
     margin-bottom: 1rem;
-
 }
 
 .subInnerz > hr{
@@ -599,9 +619,11 @@ banner styling */
     opacity: 0.5;
     margin-bottom: 1rem;
 }
+
 .subInnerz > p > i{
     opacity: 0.5;
 }
+
 .subInnerz > p{
     line-height: 1.7rem;
     color:#0a0650;
@@ -625,7 +647,6 @@ banner styling */
 .butTom{
     max-width: 250px;
     margin: auto;
-
 }
 
 
@@ -641,8 +662,12 @@ banner styling */
    font-size: 12px;
    margin: auto;
    margin: 2rem 0rem;
-   
-   
+}
+
+@media(min-width:320px) and (max-width: 500px){
+    .{
+        width: calc(100% - 40px);
+    }
 }
 
 
@@ -741,6 +766,12 @@ banner styling */
     border: 1px solid #536a79;
 }
 
+@media(min-width:320px) and (max-width: 500px){
+    .{
+        width: calc(100% - 40px);
+    }
+}
+
 
 
 
@@ -830,6 +861,12 @@ banner styling */
    font-size: 12px;
    margin: auto;
    margin: 2rem 0rem;
+}
+
+@media(min-width:320px) and (max-width: 500px){
+    .{
+        width: calc(100% - 40px);
+    }
 }
 
 
@@ -992,6 +1029,13 @@ banner styling */
     }
 
 
+    @media(min-width:320px) and (max-width: 500px){
+    .{
+        width: calc(100% - 40px);
+    }
+}
+
+
         /* FOOTER */
 
         footer{
@@ -1117,6 +1161,12 @@ banner styling */
             .resBox> hr{
                 opacity: 0.3;
             }
+
+            @media(min-width:320px) and (max-width: 500px){
+    .iconFoot{
+        width: calc(100% - 40px);
+    }
+}
 
         
                 
